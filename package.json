@@ -1,0 +1,35 @@
+{
+  "name": "emailTesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node ./miscellaneous/open.js",
+    "start": "nodemon app.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist/**"
+    ],
+    "watch": [
+      "miscellaneous/*",
+      "src/mjml/*",
+      "app.js"
+    ],
+    "verbose": true,
+    "ext": "js,json,mjml,hbs,html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.0",
+    "helper-moment": "^0.2.0",
+    "mjml": "^4.5.1",
+    "open": "^7.0.0",
+    "ws": "^7.2.1"
+  }
+}

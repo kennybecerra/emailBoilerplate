@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Folder Structure</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<style>
+		body {
+			/* background-color: #f2f2f2; */
+			letter-spacing: 0.04em;
+			height: 100vh;
+		}
+
+		.inline-text {
+			vertical-align: 20%;
+		}
+
+	</style>
+  
+</head>
+<body>
+	<div class="container">
+
+		<div class="section">
+
+			<div class="row">
+				<div class="col s12">
+
+					<h3>Directory List</h3>
+					<ul class="collapsible">
+						
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section">
+			<div class="row">
+				<h2>README</h2>
+			</div>
+		</div>
+
+
+	</div>
+
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.collapsible');
+			var instances = M.Collapsible.init(elems, options);
+		});
+
+		// Or with jQuery
+
+		$(document).ready(function(){
+			$('.collapsible').collapsible();
+		});
+	</script>
+</body>
+</html>
